@@ -14,6 +14,10 @@ submission.addEventListener("click", function (event) {
     if (changeMeArr[i] === "l" && changeMeArr[i + 1] === "l") {
       changeMeArr[i] = "L";
       i += 2;
+    } else if (changeMeArr[i] === "l" && changeMeArr[i + 1] === "i") {
+      changeMeArr[i] = "L";
+      changeMeArr[i + 1] = "i";
+      i += 2;
     } else {
       let chance = Math.floor(Math.random() * 2);
       if (chance === 0 && upperCounter < 3) {
